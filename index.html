@@ -1,9 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <title>Gerador de Avatar Poolians - 14Year</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P3DNCWRGR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4P3DNCWRGR');
+  </script>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -79,7 +88,6 @@
       const code = `<img src="temp/${id}_g.png" width="${w}"/>`;
       document.getElementById('output').textContent = code;
 
-      // عرض الصورة فقط بدون نصوص إضافية
       document.getElementById('preview').innerHTML = `<img src="temp/${id}_g.png" width="${w}"/>`;
     }
   </script>
